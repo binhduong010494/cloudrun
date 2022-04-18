@@ -21,7 +21,7 @@ RUN sudo gem install bundler
 RUN bundle install
 RUN bundle exec rake generate_secret_token
 
-CMD bundle exec rails server webrick -e production
+
 
 #RUN apt update
 #RUN apt install sudo -y
@@ -50,13 +50,15 @@ ENV BUCKET python_bucket_181194
 ENV APP_HOME /var/www/redmine
 WORKDIR $APP_HOME
 
+CMD bundle exec rails server webrick -e production
+
 # Ensure the script is executable
-RUN chmod +x /var/www/gcsfuse_run.sh
+#RUN chmod +x /var/www/gcsfuse_run.sh
 
 # Use tini to manage zombie processes and signal forwarding
 # https://github.com/krallin/tini
 ENTRYPOINT ["/usr/bin/tini", "--"]
 
 # Pass the startup script as arguments to Tini
-CMD ["/var/www/gcsfuse_run.sh"]
+#CMD ["/var/www/gcsfuse_run.sh"]
 # [END cloudrun_fuse_dockerfile]
