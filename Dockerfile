@@ -1,13 +1,13 @@
 FROM debian:10
 
-#RUN apt-get update
-#RUN apt-get install -y dirmngr gnupg vim
-#RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
-#RUN apt-get install -y apt-transport-https ca-certificates
-#RUN sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger buster main > /etc/apt/sources.list.d/passenger.list'
-#RUN apt update
-#RUN apt install sudo -y
-#RUN apt install curl wget ruby-dev mariadb-server libmariadb-dev git imagemagick ghostscript build-essential patch zlib1g-dev liblzma-dev nginx libnginx-mod-http-passenger certbot python3-certbot-nginx -y
+RUN apt-get update
+RUN apt-get install -y dirmngr gnupg vim
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 561F9B9CAC40B2F7
+RUN apt-get install -y apt-transport-https ca-certificates
+RUN sh -c 'echo deb https://oss-binaries.phusionpassenger.com/apt/passenger buster main > /etc/apt/sources.list.d/passenger.list'
+RUN apt update
+RUN apt install sudo -y
+RUN apt install curl wget ruby-dev mariadb-server libmariadb-dev git imagemagick ghostscript build-essential patch zlib1g-dev liblzma-dev nginx libnginx-mod-http-passenger certbot python3-certbot-nginx -y
 
 COPY ./ /var/www
 ENV APP_HOME /var/www/redmine
@@ -16,16 +16,16 @@ ENV TZ Asia/Ho_Chi_Minh
 
 WORKDIR $APP_HOME
 RUN chown -R www-data:www-data $APP_HOME
-#RUN gem update --system 3.2.3
-#RUN sudo gem install bundler
-#RUN bundle install
-#RUN bundle exec rake generate_secret_token
-#
-#CMD bundle exec rails server webrick -e production
+RUN gem update --system 3.2.3
+RUN sudo gem install bundler
+RUN bundle install
+RUN bundle exec rake generate_secret_token
 
-RUN apt update
-RUN apt install sudo -y
-RUN apt install curl -y
+CMD bundle exec rails server webrick -e production
+
+#RUN apt update
+#RUN apt install sudo -y
+#RUN apt install curl -y
 
 #--------MOUNT TO BUCKET--------
 RUN set -e; \
