@@ -2,12 +2,10 @@
 set -eo pipefail
 
 # Create mount directory for service
-mkdir -p $FILES_DIR
-mkdir -p $PLUGINS_DIR
+mkdir -p $MNT_DIR
 
 echo "Mounting GCS Fuse."
-gcsfuse --debug_gcs --debug_fuse $BUCKET/files $FILES_DIR
-gcsfuse --debug_gcs --debug_fuse $BUCKET/plugins $PLUGINS_DIR
+gcsfuse --debug_gcs --debug_fuse $BUCKET $MNT_DIR
 echo "Mounting completed."
 
 # Run the web service on container startup. Here we use the gunicorn
