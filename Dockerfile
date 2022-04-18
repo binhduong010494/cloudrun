@@ -51,7 +51,7 @@ ENV APP_HOME /var/www/redmine
 WORKDIR $APP_HOME
 
 # Ensure the script is executable
-RUN chmod +x /app/gcsfuse_run.sh
+RUN chmod +x /var/www/gcsfuse_run.sh
 
 # Use tini to manage zombie processes and signal forwarding
 # https://github.com/krallin/tini
