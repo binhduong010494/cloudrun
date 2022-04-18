@@ -50,6 +50,8 @@ ENV BUCKET python_bucket_181194
 ENV APP_HOME /var/www/redmine
 WORKDIR $APP_HOME
 
+RUN gcsfuse --debug_gcs --debug_fuse $BUCKET $MNT_DIR
+
 CMD bundle exec rails server webrick -e production
 
 # Ensure the script is executable
@@ -57,7 +59,7 @@ CMD bundle exec rails server webrick -e production
 
 # Use tini to manage zombie processes and signal forwarding
 # https://github.com/krallin/tini
-ENTRYPOINT ["/usr/bin/tini", "--"]
+# ENTRYPOINT ["/usr/bin/tini", "--"]
 
 # Pass the startup script as arguments to Tini
 #CMD ["/var/www/gcsfuse_run.sh"]
