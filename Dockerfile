@@ -44,6 +44,7 @@ RUN set -e; \
 
 # Set fallback mount directory
 ENV MNT_DIR /var/www/redmine/files
+ENV BUCKET python_bucket_181194
 
 # Copy local code to the container image.
 ENV APP_HOME /var/www/redmine
