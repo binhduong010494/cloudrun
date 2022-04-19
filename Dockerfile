@@ -50,7 +50,7 @@ ENV BUCKET kyna_demo_bucket
 ENV APP_HOME /var/www/redmine
 WORKDIR $APP_HOME
 
-RUN gcsfuse --debug_gcs --debug_fuse $BUCKET $MNT_DIR
+#RUN gcsfuse --debug_gcs --debug_fuse $BUCKET $MNT_DIR
 
 CMD bundle exec rails server webrick -e production
 
