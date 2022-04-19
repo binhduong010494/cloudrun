@@ -16,7 +16,7 @@ ENV TZ Asia/Ho_Chi_Minh
 
 WORKDIR $APP_HOME
 RUN chown -R www-data:www-data $APP_HOME
-#RUN sudo gem update --system 3.2.3
+RUN sudo gem update --system 3.2.3
 RUN sudo gem install bundler
 RUN bundle install
 RUN bundle exec rake generate_secret_token
