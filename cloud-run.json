@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "kynaforkids-server-production",
+  "private_key_id": "88f2cafc9962bb58f73feb2a9c805094077c0a9d",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCuTvOLXGHKDQfG\nld0lYTNfYiPTN0tyVnlTZF4KYN5VpIYTULb121iYt1w3Ot/GzLIVU2y0gLMIzxPn\nV2PSoXHjd4aS1iM6ipJZlWDsjE4FzG3hrevrbrLJHKmqbpnL1AQQKnHgVK8tSyX/\nTuK24STfIuwPOCLFrGToAu8kNZ/Xc5H8XHTk2rMwv1M7bP6CxOlCQfi1KTdx1D97\nNKd2C/bxs+TW9EUT0CB67Bgt4hmq3BMgOG3G5zxnyqqql9H0gBIwSWFCT7zDI9Iu\nBR9dXqiY5KHZxKE0529Za5eLsZI3DPkpyA1V+xG2sYVhatCv3IMmVeanOzAo1S/h\nOhZmZ/zTAgMBAAECggEAQ8wEkT9o77A6xoRSxC+2zhI7cfNPXpUA0q02oJ3FzJTV\n61xZFW5v2tJyxS6ajFXgrEfK/7gRKst0Z+ZHNs1BoWJDjwhIIoR0YPCnhsoZrMqz\nMHS3ztY7JtsFqPskybFYtTr1GPaHPjw89r0llFEkyL9qBo9kgvNHOjCt+Cz9U0yE\nwAGFIGDzsg6x7xG5KGKlhPLE9A0L6ZoyxWqhAptma6TyKmB271FhP9WID1X+B88e\nuCqq0X/+6rFjklZ9GcZwW9KKgdQ+AeujGx60DCQyQoYkU4uzy6UPBKhl8Ns9EGXo\nPthQKC0kc4IweaAKqQIBcI2qAhiI1Qew6PQWBGvEEQKBgQDn6q8BftV5VA1fUtg7\n+pLL5sJafLxQ9y9E1c+F+8Mtu9NTnps4SXha0g5+qwjRefmPhETHB8+YO4hl8im4\n3HVSrdaeEXsvorQWDszfzhI1WbODPHc3x0XuOAErC7ki0Ot52R3HsMjuO5BKaVAs\nhbhyy1octGlBNjazdkCvT3zPYwKBgQDAaMwn4asj0+dTfqbDvwHViMTuNZfhJ6Ie\nPLaZmBZzTXRTgL2/YF8WdUWqdHYxyslfC4ABwQmbayZZ9DhftAs6ksYtC3kWMPxd\nucH0pA9cIDC0TYfom9hSf7hNCvQAgh2niiU5ElWt6V1q/xa6BxMAXc345tkx9rdk\npQ19KKqv0QKBgQCJM/pdNCAvK17N6kErGs8F+ns49Vqju9knLCcd6RhLUjdv3QGP\nh0fA00zn+1+4LiVKlsHpzeEu+ulzBpVQXHy8cUPrOARc5jEMa60hKtTy4yKknX0a\nbrYcfN2UDdd1lYv6Bkzr+takunBe1XctH99DarLhEIrEncI24dra3HfGaQKBgH6y\nAwyXymtTE1WlZgYq9fg3kQUSASpfQJ8Md2h3/wB5lgmOEmO7/6D4I6F0AogS8bpG\nBkohZEQUsDI3YA+UrHgrQZdToK3+H49Py+ldRkfxYmC3VLDUPgNE2oTQm47iHsi9\nbHlCG2zi54KW6c4g7mAlZIVq7MW7oVMCY/lwF8ShAoGBAJiQy40zP057EcK4IEte\npjCt6WD/4akR41hyJyBHmsI7pqgENDV9d4HecfMQ8pCJBkboTx+YLIIHlB3uaeen\n3exJpYOJ03Si0aPI5HaA2RF0AFI49WLczh5u3I63B4oiyvWUPz1Fl2H9zGVUeuaH\npkdJZydLkxoD3XQsm+MZLV4Z\n-----END PRIVATE KEY-----\n",
+  "client_email": "cloud-run-service-account@kynaforkids-server-production.iam.gserviceaccount.com",
+  "client_id": "105079988439992724130",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/cloud-run-service-account%40kynaforkids-server-production.iam.gserviceaccount.com"
+}
