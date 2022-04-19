@@ -2,7 +2,7 @@
 set -eo pipefail
 
 echo "Mounting GCS Fuse."
-gcsfuse -o rw,allow_other -file-mode=777 -dir-mode=777 --debug_http --debug_gcs --debug_fuse --implicit-dirs --key-file=/var/www/cloud-run.json --only-dir files redmine_storage /var/www/files
+gcsfuse -o rw,allow_other -file-mode=777 -dir-mode=777 --foreground --debug_http --debug_gcs --debug_fuse --implicit-dirs --key-file=/var/www/cloud-run.json --only-dir files redmine_storage /var/www/files
 echo "Mounting completed."
 
 echo "Rails server."
